@@ -6,26 +6,38 @@
     <title>Proposal</title>
     <link rel="stylesheet" href="prposal.css" />
     <style>
+      *{
+        font-size: 11px;
+      }
       img{
         width: 200px;
         position: relative;
-        left: 80px;
-        top: 22px;
       }
       .content{
         position: absolute;
-        top: 150px;
-        left: 555px;
+        top: 24vh;
+        left: 14vh;
+      }
+      h1{
+        position: relative;
+        right: 13%;
+        font-size: 16px;
+      }
+      h2{
+        position: relative;
+        right: 6%;
+        font-size: 16px;
       }
       #yes {
         border: 2px solid rgb(25, 23, 23);
         position: relative;
-        left: 54%;
+        left: 51%;
         text-align: center;
         text-decoration: none;
         color: rgb(255, 255, 255);
         background: #020205;
         border-radius: 10%;
+        font-size: 14px;
       }
       #evil-button {
         border: 2px solid rgb(25, 23, 23);
@@ -34,10 +46,15 @@
         color: rgb(243, 240, 242);
         background: #020205;
         border-radius: 10%;
-        position: absolute;
+        position: relative;
         white-space: nowrap;
-        top: 480px;
-        left: 505px;
+        right: 20%;
+        bottom: 16px;
+        font-size: 14px;
+      }
+      .question{
+        position: relative;
+        right: 8%;
       }
     </style>
   </head>
@@ -48,11 +65,11 @@
       </div>
 
       <h1>Oye kitna bhav khayegi</h1>
+      <div class="question">
       <h2>Man bhi ja itna nakhra mat kar!</h2>
       <a href="final.html" id="yes">Ha yar karti hu tujhse pyar.</a>
-      
-    </div>
-   <a id="evil-button">nah nah! mai nhi karti tujhse pyar</a>
+
+   <a id="evil-button">nah nah! mai nhi karti tujhse pyar</a></div></div>
   </body>
   <script>
     const evilbutton = document.getElementById("evil-button");
@@ -60,16 +77,16 @@
 
 evilbutton.addEventListener('mouseover', function position(){
   function randomy(){
-  return Math.floor(Math.random() * 700);}
+  return Math.floor(Math.random() * 300);}
 function randomx(){
-  return Math.floor(Math.random() *1300);}
+  return Math.floor(Math.random() *200);}
    a = randomx();
    b = randomy();
    console.log(a);
 console.log(b);
 
-   evilbutton.style.left = a+"px"
-   evilbutton.style.top = b+"px"
+   evilbutton.style.left = a+"px";
+   evilbutton.style.top = b+"px";
 })
 
 
